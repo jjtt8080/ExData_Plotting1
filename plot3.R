@@ -15,7 +15,7 @@ plot3 <- function()
     DT <- as_datetime(f1_data$DateTime)
    
     plot(as.numeric(f1_data$Sub_metering_1) ~ DT, 
-         type="l", ylab="Energy submetering", xlab="DateTime")
+         type="l", ylab="Energy submetering", xlab="")
     points(f1_data$Sub_metering_2~DT, type="l", col="red")
     points(f1_data$Sub_metering_3~DT, type="l", col="blue")    
     legend(x="topright",legend=c("Submetering_1", "Submetering_2", "Submetering_3"), 
