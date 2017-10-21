@@ -13,6 +13,6 @@ plot2 <- function()
         mutate(DateTime=paste(Date, Time, sep=" "))
     
     plot(as.numeric(f1_data$Global_active_power) ~ as_datetime(f1_data$DateTime), 
-         type="l", ylab="Global Active Power (in kilowatts)")
+         type="l", ylab="Global Active Power (in kilowatts)", xlab="DateTime")
     dev.off()
 }

@@ -1,4 +1,5 @@
 require(graphics)
+
 plot1 <- function()
 {
     # Call download_data.R to get the data on 2007/2/1 and 2007/2/2
